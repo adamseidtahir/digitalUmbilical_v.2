@@ -2,9 +2,9 @@ body {
     cursor:url(img/cursor.png) 5 5, auto;
     margin: 0;
     height: auto;
-    background-image: linear-gradient(125deg, #f00, #ff5e00,#ffae00, #ff8400,rgb(255, 0, 0));
+    background-image: linear-gradient(125deg, rgb(182, 55, 55),rgb(255, 169, 169),rgb(180, 31, 56));
     background-size: 400%;
-    animation: bganimation 25s infinite;
+    animation: bganimation 6s infinite;
     z-index: -10;
 
 }
@@ -178,8 +178,11 @@ body {
 
 .imgroll{
     position: relative;
+
+    /* Was W: auto, H:80vh before scaling images to cover full screen*/
     width: 100vw;
-    height: 80vh;
+    height: auto; 
+
     display:flex;
     flex-direction: column;
     /* justify-content: center; */
@@ -189,8 +192,8 @@ body {
 .images {
     position: relative;
     align-self: center;
-    height: 100%;
-    width: auto;
+    height: auto;
+    width: 100%;
     z-index: -6;
 
 }
@@ -204,8 +207,7 @@ body {
 
 .leftUmbs {
     cursor:url(img/cursor3.png)20 20, auto;
-    top: 131%;
-    left:-2%;
+    
     width: 40vw;
     height: 20vw;
     position: absolute;
@@ -220,8 +222,7 @@ body {
 }
 .rightUmbs{
     cursor:url(img/cursor3.png)20 20, auto;
-    top: 86%;
-    left:68%;
+    
     width: 40vw;
     height: 20vw;
     position: absolute;
@@ -235,12 +236,49 @@ body {
     z-index: -10;
 }
 
+.lu1 {
+    top: 131%;
+    left:-2%;
+}
+
+.ru1 {
+    top: 86%;
+    left:68%;
+}
+
+.lu2 {
+    top: 155%;
+    left:20%;
+}
+
+.ru2 {
+    top: 96%;
+    left:48%;
+}
+
+.lu3 {
+    top: 170%;
+    left:15%;
+}
+
+.ru3 {
+    top: 300%;
+    left:50%;
+}
+
 .roll {
     position: absolute;
     display: inline-block;
     margin-bottom: -1.2rem;
     bottom: 0;
-    border: #fff 2px solid;
+
+    /* Orginal för scrolling text */
+    /* border: #fff 2px solid;  */
+
+    /* Ny statisk text istället för ovan */
+    border-top: #fff 2px solid;  
+    border-bottom: #fff 2px solid;
+    left: -5%;
 
     white-space: nowrap;
     overflow:hidden;
@@ -264,30 +302,6 @@ body {
     margin-right:50px; 
     font-size:2rem; 
 }
-
-
-/* .wrapper {
-}
-
-.imgtitle {
-    display: inline-block;
-    width:100vw;
-    position: absolute;
-    margin-bottom: -0.7em;
-    bottom: 0;
-
-    padding-left: 1.5em;
-    display: inline-block;
-
-    color: white;
-    font-family: "Poppins", sans-serif;
-    font-size: 2em;
-    font-weight: 400;
-    word-spacing: 1.5em;
-
-
-
-} */
 
 .imgtext {
     /* grid-area: main; */
@@ -358,12 +372,15 @@ body {
     font-family: "Poppins", sans-serif;
     font-size: 1.5em;
     font-weight: 200;
+    z-index: 10;
 }
 
-#contact-container p{
+#contact-container a{
     margin-bottom: 0;
     align-self: center;
     font-style: italic;
+    color: white;
+    text-decoration: none;
 }
 
 #contact-container h5{
@@ -377,14 +394,16 @@ body {
 
 #sponsImgRow{
     margin: 10%;
-    display: flex;
+    display: grid;
+    grid-template: "a b";
     width: 90%;
     align-self: center;
 }
 
 .sponsorImg {
-    margin: 0 8% 0 8%;
-    width: 20%;
+    margin: 8%;
+    height: 70px;
+    justify-self: center;
 }
 
 footer{
@@ -412,17 +431,6 @@ footer a{
 footer a:hover{
     color: grey;
 }
-
-
-/* h1 {
-    grid-area: title; 
-    color: white;
-    font-family: "Poppins", sans-serif;
-    font-size: 2em;
-    font-weight: 400;
-    padding-bottom: 15%;
-    z-index: 1;
-} */
 
 
 
@@ -455,6 +463,9 @@ footer a:hover{
     footer{
         font-size: 2em;
     }
+    .sponsorImg {
+        height: 200px;
+    }
 }
 
 
@@ -486,6 +497,20 @@ footer a:hover{
     footer{
         font-size: 0.5em;
     }
+    .sponsorImg {
+        height: 50px;
+    }
+}
+
+/* För screens where images will scale weirdly */
+@media screen and (max-width: 650px) {
+    .images{
+        height: 100%;
+        width: auto;
+    }
+    .imgroll{
+        height: 80vh;
+    }
 }
 
 /* Phone */
@@ -504,6 +529,9 @@ footer a:hover{
     }
     #contact-container {
         font-size: 0.5em;
+    }
+    .sponsorImg {
+        height: 20px;
     }
 }
 
