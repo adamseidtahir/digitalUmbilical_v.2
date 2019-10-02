@@ -4,9 +4,7 @@ body {
     height: auto;
     background-color: black;
     z-index: -10;
-
 }
-
 
 #frame {
     position: fixed;
@@ -31,17 +29,6 @@ body {
 
 }
 
-
-
-/* @keyframes rotation {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(359deg);
-    }
-} */
-
 #umbilical {
     width: 50vw;
     height: auto;
@@ -54,9 +41,6 @@ body {
     z-index: -8;
 }
 
-
-
-
 #rightNav {
     top: 0%;
     height: 100%;
@@ -67,7 +51,6 @@ body {
     flex-direction: column;
     justify-content: space-between;
     z-index: 1;
-
 }
 
 #leftNav {
@@ -79,7 +62,6 @@ body {
     flex-direction: column;
     justify-content: space-between;
     z-index: 4;
-
 }
 
 .nav-item {
@@ -96,9 +78,6 @@ body {
 .nav-item:hover {
     color: rgb(160,160,160);
 }
-
-
-
 
 #top{
     position: relative;
@@ -129,23 +108,11 @@ body {
     position: relative;
     width: 100vw;
     height: auto; 
-    /* display: grid;
-    grid-template-columns: minmax(200px, 1fr);
-    grid-auto-rows: minmax(100px, auto);
-    grid-template: 
-    '. . title title title . .'
-    'img img . main main main .'
-    'img img . main main main .'
-    'img img . main main main .'
-    'img img . main main main .'
-    'img img . main main main .';
-    grid-auto-rows: auto; */
     padding: 5% 0 5% 0;
     z-index: -7;
 
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
 }
 
 .quote {
@@ -165,14 +132,10 @@ body {
 
 .imgroll{
     position: relative;
-
-    /* Was W: auto, H:80vh before scaling images to cover full screen*/
     width: 100vw;
     height: auto; 
-
     display:flex;
     flex-direction: column;
-    /* justify-content: center; */
     z-index: -7;
 
 }
@@ -185,6 +148,7 @@ body {
 
 }
 
+/* The umbilicals  */
 .bgUmbs {
     width: 100%;
     height: 100%;
@@ -207,6 +171,7 @@ body {
     transform: rotate(25deg);
     z-index: -10;
 }
+
 .rightUmbs{
     cursor:url(img/cursor3.png)20 20, auto;
     
@@ -223,6 +188,7 @@ body {
     z-index: -10;
 }
 
+/* The positioning of different floating umbilical. lu = left umbilcal, ru = right umbilical */
 .lu1 {
     top: 131%;
     left:-2%;
@@ -258,25 +224,16 @@ body {
     display: inline-block;
     margin-bottom: -1.2rem;
     bottom: 0;
-
-    /* Orginal för scrolling text */
-    /* border: #fff 2px solid;  */
-
-    /* Ny statisk text istället för ovan */
     border-top: #fff 2px solid;  
     border-bottom: #fff 2px solid;
     left: -5%;
-
     white-space: nowrap;
     overflow:hidden;
-
-
-
     color: white;
     font-size: 2rem;
     font-weight: 500;
-
 }
+
 .roll ul{ 
     display:inline-block; 
     padding:0px; 
@@ -291,12 +248,9 @@ body {
 }
 
 .imgtext {
-    /* grid-area: main; */
-
     width:60%;
     align-self: center;
     padding-top: 10%;
-
     color: white;
     font-family: "Poppins", sans-serif;
     font-size: 1.5em;
@@ -314,7 +268,6 @@ body {
 }
 
 .bio-card{
-    /* width: 38%; */
     margin: 3%;
     display: flex;
     flex-direction: column;
@@ -374,7 +327,6 @@ body {
     margin: 0;
     margin-top: 10%;
     align-self: center;
-    /* font-style: italic; */
     font-weight: 200;
     font-size: 1.5em;
 }
@@ -420,7 +372,7 @@ footer a:hover{
 }
 
 
-
+/* Responsivity  */
 
 
 /* 4K */
@@ -489,7 +441,7 @@ footer a:hover{
     }
 }
 
-/* För screens where images will scale weirdly */
+/* För screens where images will scale weirdly (quick fix) */
 @media screen and (max-width: 650px) {
     .images{
         height: 100%;
