@@ -5,7 +5,7 @@ window.onbeforeunload = function () {
 
 
 // Intro animation
-TweenMax.from('#umbilical', 1.5, {opacity:0, rotation: -30, delay: 0.5, ease: Power4.easeOut});
+TweenMax.from('#heartbeat', 1.5, {opacity:0, rotation: -30, delay: 0.5, ease: Power4.easeOut});
 TweenMax.from('#logo', 1, {opacity:0, delay: 1, ease: Power2.easeIn});
 TweenMax.from('#rightNav', 1, {left:200, delay: 1.7, ease: Power2.easeOut});
 TweenMax.from('#leftNav', 1, {left:-200, delay: 1.7, ease: Power2.easeOut});
@@ -16,7 +16,7 @@ var controller = new ScrollMagic.Controller();
 var tl1 = new TimelineMax();
 tl1.add(TweenMax.to("#logo", 1, {width:"6vw", top: "5%", left: "3%", marginTop: 0}));
 tl1.to('#arrow', 1, {opacity:0}, "-=1");
-tl1.to('#umbilical', 2, {opacity:0, ease: Power2.easeIn}, "-=2");
+tl1.to('#heartbeat', 2, {opacity:0, ease: Power2.easeIn}, "-=2");
 tl1.to('#logo', 1, {delay: 1, attr:{src:"img/logoMini.png"}}, "-=1");
 
 var scene = new ScrollMagic.Scene({
