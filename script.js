@@ -104,6 +104,16 @@ var scene = new ScrollMagic.Scene({
     .addTo(controller);
 
 
+var tl7b = TweenMax.to('#touring', 3, {opacity:1});
+
+var scene = new ScrollMagic.Scene({
+    triggerElement: "#touring",
+    triggerHook: 0.7
+})
+    .setTween(tl7b)
+    .addTo(controller);
+
+
 var tl8 = TweenMax.to('#contact', 3, {opacity:1});
 
 var scene = new ScrollMagic.Scene({
