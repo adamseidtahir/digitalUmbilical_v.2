@@ -9,6 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Digital Umbilcal is a dance piece exploring the intimacy and connection between performer and audience.">
     <link rel="shortcut icon" href="img/logoMini.png" type="image/x-icon">
+    <link rel="canonical" href="http://bodyintelligence.art" />
     <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:200,400,700&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
