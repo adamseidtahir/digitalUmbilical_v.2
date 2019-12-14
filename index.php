@@ -499,8 +499,7 @@
             <h5>Upcoming</h5>
             <ul>
                 <li>
-                    <!-- <a href="https://theatredeliege.be/evenement/dansathon/" target="_blank">19th November, Theatre de Liege, Liege (Belgium)</a> -->
-                    19th November, Theatre de Liege, Liege (Belgium)
+                    More soon...
                 </li>
             </ul>
             <h5>Previous tours</h5>
@@ -512,6 +511,10 @@
                 <li>
                     <!-- <a href="http://www.maisondeladanse.com/programmation/saison2019-2020/projets-recompenses" target="_blank">19th October, Maison de la Danse Lyon (France)</a> -->
                     19th October, Maison de la Danse Lyon (France)
+                </li>
+                <li>
+                    <!-- <a href="https://theatredeliege.be/evenement/dansathon/" target="_blank">19th November, Theatre de Liege, Liege (Belgium)</a> -->
+                    19th November, Theatre de Liege, Liege (Belgium)
                 </li>
                 
             </ul>
