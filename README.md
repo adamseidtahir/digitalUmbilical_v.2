@@ -7,3 +7,12 @@ at being informative but also at visually conveying the work itself through imag
 
 
 ![BIC Mockup image](readme/mockup1.png)
+
+![BIC Mockup image](readme/mockup2.png)
+
+![BIC Mockup image](readme/mockup3.png)
+
+![BIC Mockup image](readme/mockup4.png)
+
+
+Link to website: http://www.bodyintelligence.art/
