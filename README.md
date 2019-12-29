@@ -6,4 +6,4 @@ primarily important for attracting new collaborators and funding bodies. So it i
 at being informative but also at visually conveying the work itself through images.
 
 
-
+![BIC Mockup image](readme/mockup1.png)
